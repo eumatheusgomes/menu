@@ -1,0 +1,29 @@
+{
+  "name": "jquery-scss-menu",
+  "homepage": "https://github.com/eumatheusgomes/menu",
+  "authors": [
+    "Matheus Gomes <eu@matheusgomes.com.br> (http://matheusgomes.com.br)"
+  ],
+  "description": "A simple SCSS + jQuery menu.",
+  "main": [
+    "src/scss/main.scss",
+    "src/js/menu.js"
+  ],
+  "keywords": [
+    "menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "qunit": "^2.0.1",
+    "blanket": "^1.1.7"
+  },
+  "dependencies": {
+    "jquery": "^1.12.4"
+  }
+}

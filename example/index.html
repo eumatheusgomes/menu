@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css">
+  <link rel='stylesheet' href='//fonts.googleapis.com/icon?family=Material+Icons' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../dist/menu.css" type="text/css">
+  <title>Menu</title>
+  <style type="text/css">
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  body {
+    background: #eee;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .toggle {
+    color: #666;
+    display: block;
+    float: left;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    width: 72px;
+  }
+  .right {
+    float: right
+  }
+  </style>
+</head>
+<body>
+
+  <a href="javascript:;" class="toggle" id="menu-toggle1">
+    <i class="material-icons">more_vert</i>
+  </a>
+
+  <a href="javascript:;" class="toggle right" id="menu-toggle2">
+    <i class="material-icons">more_vert</i>
+  </a>
+
+  <ul
+    class="menu"
+    data-menu
+    data-menu-toggle="#menu-toggle1, #menu-toggle2"
+  >
+    <li>
+      <a href="#">Duis aute irure dolor</a>
+    </li>
+    <li class="menu-separator"></li>
+    <li>
+      <a href="#">Lorem ipsum dolor sit amet</a>
+    </li>
+    <li>
+      <a href="#">Consectetur adipisicing elit</a>
+    </li>
+    <li>
+      <a href="#">Tempor incididunt ut</a>
+    </li>
+    <li class="menu-separator"></li>
+    <li>
+      <a href="#">Excepteur sint</a>
+    </li>
+  </ul>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../dist/menu.js"></script>
+  <script>$('[data-menu]').menu();</script>
+</body>
+</html>
