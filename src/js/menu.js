@@ -22,11 +22,10 @@
             .css(self.calcPosition($target))
             .toggleClass('show');
 
+          e.preventDefault();
         } else if (!$target.closest(self.$el)[0]){
           self.$el.removeClass('show');
         }
-
-        e.preventDefault();
       });
     },
 
